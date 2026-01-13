@@ -1,18 +1,5 @@
 let components_names = [
-  "a-box",
-  "a-circle",
-  "a-cone",
-  "a-cylinder",
-  "a-dodecahedron",
-  "a-icosahedron",
-  "a-octahedron",
-  "a-plane",
-  "a-ring",
-  "a-sphere",
-  "a-tetrahedron",
-  "a-torus-knot",
-  "a-torus",
-  "a-triangle"]
+]
 let rnd = (l,u) => Math.floor(Math.random() * (u-l) + l);
 let rndColor = () => "rgb(" + rnd(0,256) + "," + rnd(0,256) + "," + rnd(0,256) + ")";
 let components = [];

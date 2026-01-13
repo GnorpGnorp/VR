@@ -1,20 +1,16 @@
+<!DOCTYPE html>
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-    
+    <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.6.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-plane position="0 -0 -4" rotation="-90 0 0" width="80" height="80" color="brown"></a-plane>
-      <a-sky color="#000000"></a-sky>
-      <a-camera>
-        <a-cursor>
-          <a-text id="text1" position="-0.75 1 -2"></a-text>
-          <a-text id="text2" position="-0.74 0.99 -2.01" color="black"></a-text>
-        </a-cursor>
-      </a-camera>
+      <a-entity environment="preset: checkerboard"></a-entity>
+      <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity>
     </a-scene>
-
-    <script src="script.js"></script>
   </body>
-</html>
+</html>npm i aframe-particle-system-component
